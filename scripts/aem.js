@@ -714,12 +714,12 @@ function decorateBlock(block) {
  * Decorates a default block.
  * @param {Element} block The block element
  */
-export function decorateDefaultBlock() {
+export function decorateDefaultBlock(main) {
   const shortBlockName = 'default-content-wrapper';
     
 
   // Set block ID with shortBlockName and index
-  const blocks = document.querySelectorAll(`.${shortBlockName}`);
+  const blocks = main.querySelectorAll(`.${shortBlockName}`);
   blocks.forEach((block, index) => {
     block.id = `${shortBlockName}-${index}`;
     block.setAttribute('data-block-name', shortBlockName);

@@ -275,7 +275,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateDMImages(main);
-  decorateDefaultBlock();
+  decorateDefaultBlock(main);
 }
 
 
