@@ -15,7 +15,8 @@ import {
   getMetadata,
   loadScript,
   toClassName,
-  toCamelCase
+  toCamelCase,
+  decorateDefaultBlock
 } from './aem.js';
 import { picture, source, img } from './dom-helpers.js';
 
@@ -274,6 +275,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateDMImages(main);
+  decorateDefaultBlock();
 }
 
 
